@@ -60,7 +60,7 @@ def calc_3_most_common_letters_using_max(s):
     sorted_letters_occurrences = {k: v for k, v in
                                   sorted(calc_letters_occurrences(s).items(), key=lambda item: item[1], reverse=True)}
     # this would produce a sorted list and not a dict:
-    # sorted(calc_letters_occurrences(s).items(), key=lambda x: # x[1], reverse=True)
+    # sorted(calc_letters_occurrences(s).items(), key=lambda x: x[1], reverse=True)
     most_common_letters = list(sorted_letters_occurrences.keys())[0:3]
 
     return most_common_letters
